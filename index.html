@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Blog Games</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Slick -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+        <!--Fonte Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <!--Google Fontes -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    </head>
+    <body>
+              
+        <div class="container">
+            <nav class="nav">
+                    <div class="logo-header">                      
+                        <img src="img/logo.png">
+                    </div>                
+                    <div class="lista-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#views">Views</a></li>
+                            <li><a href="#news">News</a></li>
+                            <li><a href="#game">Game</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                            <li class="login"><a href="#" onclick="Modal()">Login /Inscreva-se</a><i class="fas fa-user-circle"></i></li>                            
+                        </ul>                      
+                    </div>
+                       
+                    <!--menu hamburguer-->
+                    <div class="hamburger" id="btn-hamburger">
+                        <i ></i>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>                        
+            </nav>      
+             <!-- side bar-->
+             <div class="sidebar" id="sidebar">
+                <ul>
+                    <li class="btn-fechar-sidebar"><a href="#">X</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#views">Views</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#game">Game</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#" onclick="Modal()">Login /Inscreva-se</a><i class="fas fa-user-circle"></i></li>
+                </ul>
+            </div>    
+            
+            <!--Modal login-->
+            <div class="container-modal">
+                <div class="modal">
+                    <form>
+                       <div class="form-modal1">
+                           <label for="Login">Login</label>
+                           <input type="text" name="login" id="login">
+                       </div>
+                       <div class="form-modal2">
+                           <label for="senha">Senha</label>
+                           <input type="password" name="senha" id="senha">
+                       </div>
+                       <button class="btn-login" type="submit">Entrar</button>
+                    </form>
+                    <button class="fechar-btn-modal" onclick="FecharModal()"> X </button>
+                    <div class="rodape-modal">
+                        <span>Não possui uma conta?</span>
+                        <a href="#">Cadastre-se</a>
+                    </div>                    
+                </div>               
+             </div>
+     
+        </div>
+
+        <section class="carrousel">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    
+                    <img src="img/carrocel1.jpg" style="width:100%">
+                    <div class="text">MASS EFFECT</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    
+                    <img src="img/carrocel2.jpg" style="width:100%">
+                    <div class="text">THE LAST OF US 2</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    
+                    <img src="img/carrocel3.jpg" style="width:100%">
+                    <div class="text">DRAGON AGE</div>
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <div class="conteudo-capa">
+                <h1>GAME START!!</h1>
+                <p class="text-capa">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Aliquam pretium pellentesque imperdiet. Fusce egestas   
+                </p>
+                <div class="btn-capa">
+                    <button><a href="#views">Read More <i class="fas fa-sort-down"></i></a> </button>                    
+                </div>                                       
+            </div>          
+        </section>
+
+        <!--Top Views-->
+        <a name="views"></a>
+        <section class="top-views">           
+            <div class="container">             
+              <h2>Top Views</h2>             
+              <div class="flex area-noticia" id="areanoticia"></div>
+                       
+            </div>
+        </section>
+
+        
+        <!--Noticias recentes -->
+        <a name="news"></a>
+        <section class="ultimas-noticias">
+            <h2>News</h2>
+            <div class="container">
+               <div class="area-news-flex">                       
+                   <div class="latest-news">  
+
+                       <div class="divisoria-news">
+                          <div class="sub-latest-news">                                                 
+                            <img src="img/Game-Mobile.jpg" alt="">
+                          </div>
+                          <div class="texto-latest-news">
+                            <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Aliquam pretium pellentesque imperdiet. Fusce egestas 
+                                vitae mi a scelerisque. Donec efficitur tellus vitae    
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Aliquam pretium pellentesque imperdiet                           
+                            </p><br>
+                            
+                            <button><i class="fas fa-plus-circle"></i></button>
+                          </div>   
+                       </div>     
+                       
+                       <div class="divisoria-news">
+                            <div class="sub-latest-news">                                                 
+                               <img src="img/Game-Pc.jpg" alt="">
+                            </div>
+                            <div class="texto-latest-news">
+                                <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Aliquam pretium pellentesque imperdiet. Fusce egestas 
+                                    vitae mi a scelerisque. Donec efficitur tellus vitae  
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Aliquam pretium pellentesque imperdiet
+                                </p><br>
+                                
+                                <button><i class="fas fa-plus-circle"></i></button>
+                            </div>   
+                       </div>    
+                       
+                      <div class="divisoria-news">
+                            <div class="sub-latest-news">                                                 
+                              <img src="img/Realidade-Virtual.jpg" alt="">
+                            </div>
+                            <div class="texto-latest-news">
+                                <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Aliquam pretium pellentesque imperdiet. Fusce egestas 
+                                    vitae mi a scelerisque. Donec efficitur tellus vitae  
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Aliquam pretium pellentesque imperdiet
+                                </p><br>
+                                
+                                <button><i class="fas fa-plus-circle"></i></button>
+                            </div>   
+                      </div>                                                                          
+                   </div>
+                   
+
+                   <!-- Trends-->
+                   <div class="trendings">
+                       <h4>Trendings</h4><br><br><br>
+                      <div class="sub-trendings">
+                          <div class="img-trendings">
+                             <img src="img/pnx.jpg" alt="">
+                          </div>
+                          <div class="text-trendings">
+                             <p>
+                                <a href="#">Lorem ipsum dolor sit amet!</a> 
+                            </p>
+                          </div>
+                      </div>
+
+                      <div class="sub-trendings">
+                        <div class="img-trendings">
+                           <img src="img/thesims.jpg" alt="">
+                        </div>
+                        <div class="text-trendings">
+                           <p>
+                             <a href="#">Lorem ipsum dolor sit amet!</a> 
+                           </p>
+                        </div>
+                     </div>
+
+                      <div class="sub-trendings">
+                        <div class="img-trendings">
+                            <img src="img/lol.png" alt="">
+                        </div>
+                        <div class="text-trendings">
+                          <p>
+                            <a href="#">Lorem ipsum dolor sit amet!</a> 
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Quadro Noticia-->
+
+                      <div class="quadro-categorias">
+                         <h4>Categorias</h4>
+                         <ul>
+                             <li><a href="#">Games para PC</a></li>
+                             <li><a href="#">Games Online</a></li>
+                             <li><a href="#">Mundo Aberto</a></li>
+                             <li><a href="#">Android & Iphone</a></li>
+                             <li><a href="#">Battle Royale</a></li>
+                         </ul>
+                      </div>
+
+                      <ul class="lista-midias-footer">    
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                     </ul>
+
+                    </div>
+                   </div>
+               </div>
+            </div>
+        </section>
+
+        <!--Game-->
+        <a name="game"></a>
+        <section class="new-game">
+            <div class="img-game">
+                <img src="img/Mass-Effect.jpg" height="650px">
+            </div>
+            <div class="texto-game">
+                <h1>The game you’ve been waiting for is out now !!</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Quis ipsum suspendisse ultrices gravida. Ipsum dolor 
+                    sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliquamet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Vestibulum posuere porttitor justo id 
+                    pellentesque. Proin id lacus feugiat, posuere erat sit amet, 
+                    commodo ipsum. Donec pellentesque vestibulum metus...                  
+                </p>
+                <button class="btn-new-game"><i class="fas fa-plus-circle"></i></button>
+            </div>
+        </section>
+
+        <section class="video">
+            <video width="80%" height="auto" controls="controls"  poster="img/mass-effect-le.jpg">
+                <source src="video/TheNextMassEffectOfficial-Trailer.mp4" type="video/mp4">
+            </video>
+
+            <div class="text-video">
+                <p>
+                    The Game you’ve Been Waiting 
+                </p>                   
+            </div>
+        </section>
+
+        <!--Inscreva-se-->
+
+        <a name="contato"></a>
+        <section class="inscreva-se">
+            <div class="container">
+                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>               
+                <form>
+                    <div class="form-group">
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="Insira seu email">
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </div>           
+        </section>
+
+        <!--Footer-->
+        <footer>          
+            <div class="img-footer2">
+                <img src="img/fortn.png" width="200px">          
+            </div>
+            <div class="logo-footer">
+                <img src="img/logo.png">
+                <ul class="lista-footer">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#views">Views</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#game">Game</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+
+                <ul class="lista-midias-footer">    
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="img-footer2">
+              <img src="img/cratos.png" width="200px">
+            </div>
+            <div class="copy">
+                <span>Copyright ©2021 Todos os Direitos Reservados| by Geisimara</span>
+            </div>           
+        </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
