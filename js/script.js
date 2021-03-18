@@ -28,7 +28,7 @@ function InserirNoticia(noticia){
         <h3>${noticia.nome}</h3>
         <p class="data-noticia">
             ${noticia.data}
-        </p><br><br>
+        </p>
         <p class="text-noticia">
             ${noticia.resumo}
         </p>
